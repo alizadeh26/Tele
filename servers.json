@@ -1,0 +1,22 @@
+{
+  "channels": [
+    {"name": "Farah_VPN", "limit": 100},
+    {"name": "Farah_VPN", "limit": 100}
+  ],
+  "servers": [
+    {
+      "name": "server1",
+      "host": "example.com",
+      "port": 443,
+      "tls": true,
+      "health_path": "/health"
+    },
+    {
+      "name": "server2",
+      "host": "1.2.3.4",
+      "port": 8080,
+      "tls": false,
+      "health_path": "/status"
+    }
+  ]
+}
