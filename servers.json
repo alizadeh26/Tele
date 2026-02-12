@@ -1,22 +1,42 @@
 {
   "channels": [
-    {"name": "Farah_VPN", "limit": 100},
-    {"name": "Farah_VPN", "limit": 100}
+    {
+      "name": "Farah_VPN",
+      "limit": 100
+    },
+    {
+      "name": "filembad",
+      "limit": 100
+    }
   ],
   "servers": [
     {
-      "name": "server1",
-      "host": "example.com",
+      "name": "Cloudflare_HTTPS",
+      "host": "www.cloudflare.com",
       "port": 443,
       "tls": true,
-      "health_path": "/health"
+      "health_path": "/"
     },
     {
-      "name": "server2",
-      "host": "1.2.3.4",
-      "port": 8080,
+      "name": "Google_HTTPS",
+      "host": "www.google.com",
+      "port": 443,
+      "tls": true,
+      "health_path": "/"
+    },
+    {
+      "name": "GitHub_HTTPS",
+      "host": "github.com",
+      "port": 443,
+      "tls": true,
+      "health_path": "/"
+    },
+    {
+      "name": "Cloudflare_DNS_TCP",
+      "host": "1.1.1.1",
+      "port": 53,
       "tls": false,
-      "health_path": "/status"
+      "health_path": "/"
     }
   ]
 }
