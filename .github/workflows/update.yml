@@ -1,4 +1,4 @@
-name: Update Subscription
+name: Update Subscription Ultra
 
 on:
   schedule:
@@ -18,7 +18,7 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - run: python monitor_build_async.py
+      - run: python monitor_build_ultra.py
 
       - name: Commit subscription
         run: |
