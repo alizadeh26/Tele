@@ -1,4 +1,4 @@
-name: Update Subscription Ultra
+name: Update Subscription Bot
 
 on:
   schedule:
@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
 
@@ -16,9 +15,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - run: pip install -r requirements.txt
+      - run: pip install telethon aiohttp
 
-      - run: python monitor_build_ultra.py
+      - run: python monitor_build_bot.py
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
 
       - name: Commit subscription
         run: |
