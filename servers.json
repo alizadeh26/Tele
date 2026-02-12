@@ -1,42 +1,12 @@
 {
   "channels": [
-    {
-      "name": "Farah_VPN",
-      "limit": 100
-    },
-    {
-      "name": "filembad",
-      "limit": 100
-    }
+    {"name": "Farah_VPN", "limit": 100},
+    {"name": "filembad", "limit": 100}
   ],
   "servers": [
-    {
-      "name": "Cloudflare_HTTPS",
-      "host": "www.cloudflare.com",
-      "port": 443,
-      "tls": true,
-      "health_path": "/"
-    },
-    {
-      "name": "Google_HTTPS",
-      "host": "www.google.com",
-      "port": 443,
-      "tls": true,
-      "health_path": "/"
-    },
-    {
-      "name": "GitHub_HTTPS",
-      "host": "github.com",
-      "port": 443,
-      "tls": true,
-      "health_path": "/"
-    },
-    {
-      "name": "Cloudflare_DNS_TCP",
-      "host": "1.1.1.1",
-      "port": 53,
-      "tls": false,
-      "health_path": "/"
-    }
+    {"name": "Cloudflare_HTTPS", "host": "www.cloudflare.com", "port": 443, "tls": true, "health_path": "/"},
+    {"name": "Google_HTTPS", "host": "www.google.com", "port": 443, "tls": true, "health_path": "/"},
+    {"name": "GitHub_HTTPS", "host": "github.com", "port": 443, "tls": true, "health_path": "/"},
+    {"name": "Cloudflare_DNS_TCP", "host": "1.1.1.1", "port": 53, "tls": false, "health_path": "/"}
   ]
 }
